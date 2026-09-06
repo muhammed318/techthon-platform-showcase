@@ -3,7 +3,7 @@
 # 🏆 TechThon • TAEF-AI Platform
 ### Automated Software Project Auditor & Next-Gen Hackathon Hub in MENA
 
-[![Platform Status](https://img.shields.io/badge/Platform-Live-success?style=for-the-badge&logo=vercel)](https://techthon1.vercel.app)
+[![Platform Status](https://img.shields.io/badge/Platform-Live-success?style=for-the-badge&logo=vercel)](https://techthon-frontend.vercel.app/)
 [![API Status](https://img.shields.io/badge/API-Online-blue?style=for-the-badge&logo=fastapi)](https://techthon-api.onrender.com/health)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](#)
 [![Region](https://img.shields.io/badge/Region-Turkey%20%26%20MENA-purple?style=for-the-badge)](#)
