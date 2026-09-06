@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Platform](https://img.shields.io/badge/Platform-TechThon%20•%20TAEF--AI-blue?style=for-the-badge)](https://techthon1.vercel.app)
+[![Platform](https://img.shields.io/badge/Platform-TechThon%20•%20TAEF--AI-blue?style=for-the-badge)](https://techthon-frontend.vercel.app/)
 [![Architecture](https://img.shields.io/badge/Architecture-Decoupled%20SOA-indigo?style=for-the-badge)](#)
 [![Backend](https://img.shields.io/badge/Backend-FastAPI%20%7C%20Python%203.12-success?style=for-the-badge)](#)
 [![Frontend](https://img.shields.io/badge/Frontend-Next.js%20%7C%20TypeScript-black?style=for-the-badge)](#)
