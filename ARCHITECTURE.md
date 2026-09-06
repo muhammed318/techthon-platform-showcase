@@ -188,94 +188,35 @@ Global Error Interceptor: Normalizes upstream network and status errors into cle
 429 
 →
 →
- Rate-limiting backoff notifications.
-4.4 Zero-Load PDF Compilation
-Stack: html2canvas + jsPDF.
-Implementation: Dynamically parses and renders DOM nodes into high-resolution A4 PDFs locally within the client's browser. This guarantees zero server-side compute overhead during report export.
-5. Infrastructure & Cloud Deployment
-Component	Platform / Host	Tier	Responsibility
-Frontend UI	Vercel Global Edge Network	Hobby / Production	CDN Caching, Edge Routing, Static Assets
-API Backend	Render Web Service	Free / Standard	Ingestion, Task Workers, AST Analysis
-Database	Neon Serverless	Free (0.5 GB Serverless)	User State, Hackathons, Persisted Audits
-Cloud AI Gateway	OpenRouter API	BYOK Pay-as-you-go	Model Routing (Qwen, Claude, Llama)
-Local AI Engine	Client Hardware (Ollama)	On-Premise	100% Air-Gapped Local Inference
-6. Benchmarks & Performance Telemetry
-Mean Execution Time: A full-stack repository (50–80 source files) completes in 12–18 seconds via concurrent batching.
-Memory Footprint: The backend operates with a baseline of ~110 MB RAM, peaking at ~250 MB RAM during multi-part decompression and AST scanning.
-Cost Efficiency: Net operating infrastructure cost for the AI platform is 
-0.00
-∗
-∗
-.
-U
-s
-e
-r
-i
-n
-f
-e
-r
-e
-n
-c
-e
-c
-o
-s
-t
-s
-v
-i
-a
-O
-p
-e
-n
-R
-o
-u
-t
-e
-r
-(
-u
-t
-i
-l
-i
-z
-i
-n
-g
-‘
-Q
-w
-e
-n
-2.572
-B
-‘
-)
-a
-v
-e
-r
-a
-g
-e
-b
-e
-t
-w
-e
-e
-n
-∗
-∗
-0.00∗∗.UserinferencecostsviaOpenRouter(utilizing‘Qwen2.572B‘)averagebetween∗∗
-0.012 – $0.02 per full repository audit.
+- `429` -> Rate-limiting backoff notifications.
+
+### 4.4 Zero-Load PDF Compilation
+- **Stack:** `html2canvas` + `jsPDF`.
+- **Implementation:** Dynamically parses and renders DOM nodes into high-resolution A4 PDFs locally within the client's browser. This guarantees zero server-side compute overhead during report export.
+
+---
+
+## 5. Infrastructure & Cloud Deployment
+
+| Component | Platform / Host | Tier | Responsibility |
+|---|---|---|---|
+| **Frontend UI** | Vercel Global Edge Network | Production | CDN Caching, Edge Routing, Static Assets |
+| **API Backend** | Render Web Service | Free / Standard | Ingestion, Task Workers, AST Analysis |
+| **Database** | Neon Serverless | Free (0.5 GB Serverless) | User State, Hackathons, Persisted Audits |
+| **Cloud AI Gateway** | OpenRouter API | BYOK Pay-as-you-go | Model Routing (Qwen, Claude, Llama) |
+| **Local AI Engine** | Client Hardware (Ollama) | On-Premise | 100% Air-Gapped Local Inference |
+
+---
+
+## 6. Benchmarks & Performance Telemetry
+
+- **Mean Execution Time:** A full-stack repository (50–80 source files) completes in **12–18 seconds** via concurrent batching.
+- **Memory Footprint:** The backend operates with a baseline of **~110 MB RAM**, peaking at **~250 MB RAM** during multi-part decompression and AST scanning.
+- **Cost Efficiency:** Net operating infrastructure cost for the AI platform is **$0.00**. User inference costs via OpenRouter (utilizing Qwen 2.5 72B) average between **$0.012 to $0.02** per full repository audit.
+
+---
+
 <div align="center">
-<sub>TechThon • TAEF-AI Architecture Blueprint • Production Specification Version 1.4.0</sub>
+  <sub>TechThon • TAEF-AI Architecture Blueprint • Production Specification Version 1.4.0</sub>
 </div>
 ```
