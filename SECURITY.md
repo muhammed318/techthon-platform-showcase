@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Security Rating](https://img.shields.io/badge/Security_Score-A%2B%20Enterprise-emerald?style=for-the-badge&logo=shield)](https://techthon1.vercel.app)
+[![Security Rating](https://img.shields.io/badge/Security_Score-A%2B%20Enterprise-emerald?style=for-the-badge&logo=shield)](https://techthon-frontend.vercel.app/)
 [![OWASP Compliance](https://img.shields.io/badge/OWASP_Top_10-Compliant-blue?style=for-the-badge)](#)
 [![Data Privacy](https://img.shields.io/badge/Data_Privacy-Zero_Telemetry-purple?style=for-the-badge)](#)
 [![Vulnerability Status](https://img.shields.io/badge/Known_Vulnerabilities-0%20(Audited)-success?style=for-the-badge)](#)
